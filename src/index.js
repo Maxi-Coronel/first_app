@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App'; //importamos nuestro componente
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+ReactDOM.render( //elemento a renderizar y donde lo va a renderizar
+  <React.StrictMode><App /></React.StrictMode>, //elemente de react a renderizar
+  document.getElementById('root') //lugar donde se va a renderizar
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
+// Si quieres empezar a medir el rendimiento en tu aplicación, pasa una función
+// para registrar resultados (por ejemplo: ReportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

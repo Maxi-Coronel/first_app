@@ -1,0 +1,22 @@
+.headerContainer {
+    display: flex;
+      justify-content: space-between;
+    background-color: rgb(71, 71, 71);
+    color: white;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0 25px;
+  }
+  
+  li {
+    margin: 10px 25px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: yellowgreen;
+    font-weight: bold;
+  }

@@ -1,19 +1,26 @@
-import './App.css';
+/*import Login from "./screens/Login/Login";
 
-/* function App() {
+function App() {
   return (
-    <div className="App">
-      <h1>Hola Mundo</h1>
-    </div>
+    <Login />
   );
-} */
+}*/
+
+import './App.css'; //1 forma de implementar CSS en React
+import logo from './logo.svg';
+import Header from './componentes/NavBar/NavBar'
+
+let colorApp = {
+  height: `100vh`,
+  backgroundColor: `black`,
+}
 
 const App = () => {
   return(
-    <div>
-      <h1> listos!!!</h1>
+    <div style={{...colorApp}}>
+      <Header/>
     </div>
   )
 }
-
+  
 export default App;
