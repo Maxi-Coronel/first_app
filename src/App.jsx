@@ -7,7 +7,6 @@ function App() {
 }*/
 
 import './App.css'; //1 forma de implementar CSS en React
-import logo from './logo.svg';
 import Header from './componentes/NavBar/NavBar'
 
 let colorApp = {
