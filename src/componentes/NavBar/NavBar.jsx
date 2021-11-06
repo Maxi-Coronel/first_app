@@ -2,8 +2,8 @@ import logo from '../../logo.svg'
 import './NavBar.css'
 
 let tamanioLogo = {
-width: `100px`,
-} //2 forma de implementar CSS en React
+width: `110px`,
+}
 
 const Header = () => {
     return (
