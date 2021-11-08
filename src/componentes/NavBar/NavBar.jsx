@@ -1,4 +1,5 @@
 import logo from './Amway.svg'
+import carrito from './carrito.svg'
 import './NavBar.css'
 import CartWidget from '../cartWidget/cartWidget'
 
@@ -6,7 +7,6 @@ let tamanioLogo = {
     width: `110px`,
     margin: `0 30px`
 }
-
 
 const Header = (props) => {
     return (
@@ -19,7 +19,7 @@ const Header = (props) => {
                 <li className='flex'><a href="#">Hogar</a></li>
                 <li className='flex'><a href="#">Belleza</a></li>
                 <li className='flex'><a href="#">Cuidado Personal</a></li>
-                <CartWidget/>
+                <CartWidget cart={carrito}/>
                 </ul>
             </nav>
         </header>

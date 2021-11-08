@@ -1,4 +1,4 @@
-import carrito from './carrito.svg'
+
 
 let tamanioCarrito = {
     width: `50px`,
@@ -6,7 +6,7 @@ let tamanioCarrito = {
 
 const CartWidget = (props) => {
     return(
-        <li className='flex'><a href="#"><img style={{...tamanioCarrito}} src={carrito} alt="carrito" /></a></li>
+        <li className='flex'><a href="#"><img style={{...tamanioCarrito}} src={props.cart} alt="carrito" /></a></li>
     )
 }
 
