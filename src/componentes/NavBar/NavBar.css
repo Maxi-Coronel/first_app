@@ -1,22 +1,28 @@
-.headerContainer {
+.headerContainer{
     display: flex;
       justify-content: space-between;
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(226, 226, 226);
     color: white;
-  }
+}
+
+.flex{
+  display: flex;
+    align-items: center;
+}
   
-  ul {
-    display: flex;
-    list-style: none;
-    padding: 0 25px;
-  }
-  
-  li {
-    margin: 10px 25px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: yellowgreen;
-    font-weight: bold;
-  }
+ul{
+  display: flex;
+  list-style: none;
+  padding: 0 25px;
+}
+
+li{
+  margin: 10px 25px;
+}
+
+li a{
+  text-decoration: none;
+  color: yellowgreen;
+  font-size: 20px;
+  font-weight: bold;
+}
