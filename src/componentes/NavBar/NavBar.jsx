@@ -1,7 +1,7 @@
 import logo from './Amway.svg'
 import carrito from './carrito.svg'
 import './NavBar.css'
-import CartWidget from '../cartWidget/cartWidget'
+import CartWidget from '../CartWidget/CartWidget'
 
 let tamanioLogo = {
     width: `110px`,
