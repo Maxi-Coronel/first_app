@@ -1,44 +1,18 @@
 import './ItemCount.css'
 import {Fragment, useState} from 'react'
-import Loc from './LOC.png'
-
-const productos = [
-    {
-        titulo: 'Loc',
-        precio: '$1823',
-        stock: '8'
-    },
-    {
-        titulo: 'Dish drops',
-        precio: '$1823',
-        stock: '5'
-    },
-    {
-        titulo: 'Pasta dental glister',
-        precio: '$760',
-        stock: '10'
-    }
-]
-
+import {productos} from './Items'
 
 const ItemCount = () => {
+    
     const [number, setNumber] = useState(1);
     let stock = 8;
-  
     const suma = () => {
-      if (number < stock){
-        setNumber(number + 1)
-      }else{
-          alert('no hay mas stock')
-      }
+      number < stock && setNumber(number + 1)
     }
   
     const resta = () => {
-      if (number > 1) {
-        setNumber(number - 1)
-      }
+      number > 1 && setNumber(number - 1)
     }
-
 
     return(
         <Fragment>
@@ -48,7 +22,7 @@ const ItemCount = () => {
                         <div className='tarjeta'>
                             <div className='presentacion'>
                                 <h3>{producto.titulo}</h3>
-                                <img src={Loc} alt="LOC" />
+                                <img className='img' src={producto.img} alt="LOC" />
                             </div>
                             <div className='contador'>
                                 <button className='boton' onClick={resta}> - </button>

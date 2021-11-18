@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 let tamanioCarrito = {
@@ -6,7 +7,7 @@ let tamanioCarrito = {
 
 const CartWidget = (props) => {
     return(
-        <li className='flex'><a href="#"><img style={{...tamanioCarrito}} src={props.cart} alt="carrito" /></a></li>
+        <li className='flex'><Link to="/carrito"><img style={{...tamanioCarrito}} src={props.cart} alt="carrito" /></Link></li>
     )
 }
 

@@ -1,14 +1,8 @@
-/*import Login from "./screens/Login/Login";
-
-function App() {
-  return (
-    <Login />
-  );
-}*/
 import './App.css'; //1 forma de implementar CSS en React
 import Header from './componentes/NavBar/NavBar'
-import ItemListContainer from './componentes/itemListContainer/itemListContainer'
-import ItemCount from './componentes/ItemCounts/ItemCounts'
+import ItemListContainer from './componentes/item/ItemListContainer'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
 
 let colorApp = {
   height: `100vh`,
@@ -18,29 +12,17 @@ let colorApp = {
 const App = () => {
 
   return(
-    <div style={{...colorApp}}>
-      <Header/>
-      <ItemListContainer greeting='Amway lleva a las personas a una nueva vida de entusiasmo, promesas, ganancias y esperanza...'/>
-      <ItemCount/>
-    </div>
+    <BrowserRouter>
+      <div style={{...colorApp}}>
+        <Header/>
+        <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        </Routes>
+        <ItemListContainer greeting='Amway lleva a las personas a una nueva vida de entusiasmo, promesas, ganancias y esperanza...'/>
+        {/* <div className='flex'><ItemCount/></div> */}
+      </div>
+    </BrowserRouter>
   )
 }
 
 export default App;
-/* 
-
-function Apps() {
-
-  new Date()
-
-
-
-  return (
-    
-  )
-
-}
-
-  
-export default Apps;
- */
