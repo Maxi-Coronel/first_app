@@ -8,6 +8,9 @@ let presentacion = {
     margin: `0 auto`,
     textAlign: `center`
 }
+let flex = {
+    display: `flex`
+}
 
 const ItemListContainer = (props) => {
 
@@ -31,7 +34,9 @@ const ItemListContainer = (props) => {
         <header>
             <h1 style={{...presentacion}}>{props.greeting}</h1>
         </header>
-        <ItemList items={items} />
+        <div style={{...flex}}>
+            <ItemList items={items} />
+        </div>
         </>
     )
 }
