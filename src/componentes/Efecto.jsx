@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
-import {productos} from './item/Items'
 
-const Efecto = () => {
+const Efecto = (props) => {
 
     const [number, setNumber] = useState(0)
 
@@ -18,10 +17,10 @@ const Efecto = () => {
         console.log('cuando cambia estado/prop');
     }, [number]); */
 
-    console.log(productos);
-
     const add = () => {
-        setNumber(number +1)
+        if (number < props.stock) {
+            setNumber(number +1)
+        }
     };
     
     const resta = () => {

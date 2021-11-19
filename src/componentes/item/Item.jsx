@@ -11,13 +11,8 @@ const Item = (item) => {
                 <h2>{item.item.titulo}</h2>
                 <img className='img' src={item.item.img} alt={item.item.titulo} />
                 <h3>{item.item.precio}</h3>
-                <Efecto/>
+                <Efecto stock={item.item.stock}/>
             </div>
-            {/* {<div className='contador'>
-                <button className='boton' onClick={resta}> - </button>
-                <h3>{number}</h3>
-                <button className='boton' onClick={suma}> + </button>
-            </div>} */}
             <button className='agregar'>Agregar al carrito</button>
         </div>
     )
