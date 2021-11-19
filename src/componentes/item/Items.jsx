@@ -14,7 +14,7 @@ export const productos = [
         img: 'img/detergente.png'
     },
     {
-        titulo: 'Pasta dental glister',
+        titulo: 'Pasta dental',
         id: '3',
         precio: '$760',
         stock: '10',
