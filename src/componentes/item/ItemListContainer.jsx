@@ -1,40 +1,40 @@
 import {useState} from 'react'
 import {productos} from './Items'
 import ItemList from './ItemList'
+import { useEffect } from 'react/cjs/react.development'
+import { useParams } from 'react-router-dom'
 
-let presentacion = {
-    color: `black`,
-    width: `60%`,
-    margin: `0 auto`,
-    textAlign: `center`
-}
-let flex = {
-    display: `flex`
-}
+const ItemListContainer = () => {
 
-const ItemListContainer = (props) => {
+    const { catId } = useParams();
 
-    const [items, setItems] = useState([]);    
+    const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(false);
+    
+    useEffect(() => {
+        setLoading(true);
 
-    const traeProductos = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(productos)
-        }, 2000);
-    });
+        const traeProductos = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(productos)
+            }, 2000);
+        });
+    
+        traeProductos.then((res)=>{
+            catId ? setItems(res.filter(item => item.categoria === catId)) : 
+            setItems(res);
+        })
+        .catch((error)=>{
+            console.log(error);
+        })
+        .finally(() => {
+            setLoading(false)
+        })
+    }, [catId])
 
-    traeProductos.then((res)=>{
-        setItems(res);
-    })
-    .catch((error)=>{
-        console.log(error);
-    })
-
-    return (
+    return (loading ? <h1>CASI LISTO...</h1> :
         <>
-        <header>
-            <h1 style={{...presentacion}}>{props.greeting}</h1>
-        </header>
-        <div style={{...flex}}>
+        <div className='flex'>
             <ItemList items={items} />
         </div>
         </>

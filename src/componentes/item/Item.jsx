@@ -1,17 +1,20 @@
 import React from "react";
-import './ItemCount.css'
+import './Items.css'
 import Efecto from "../Efecto";
+import { Link } from 'react-router-dom'
 
 
-const Item = (item) => {
+const Item = ({item}) => {
 
     return (
         <div className='tarjeta'>
-            <div className='presentacion'>
-                <h2>{item.item.titulo}</h2>
-                <img className='img' src={item.item.img} alt={item.item.titulo} />
-                <h3>{item.item.precio}</h3>
-                <Efecto stock={item.item.stock}/>
+            <div className='presentacion' key={item.id}>
+                <Link className='imgConteiner' to={`/product/${item.id}`}>
+                    <img className='img' src={item.img} alt={item.titulo} />
+                </Link>
+                <h5>{item.titulo}</h5>
+                <p>{item.precio}</p>
+                <Efecto stock={item.stock}/>
             </div>
             <button className='agregar'>Agregar al carrito</button>
         </div>

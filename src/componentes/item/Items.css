@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.tamanioLogo{
+    width: 150px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.colorApp{
+    background-color: #fafafa;
+}
+
+.headerContainer{
+    display: flex;
+      justify-content: space-between;
+    background-color: #fafafa;
+    color: white;
+    box-shadow: 0px 1px 7px rgb(131, 131, 131);
+}
+
+.flex{
+  display: flex;
+    align-items: center;
+}
+  
+ul{
+  display: flex;
+  list-style: none;
+  padding: 0 25px;
+}
+
+li{
+  margin: 10px 25px;
+}
+
+li a{
+  text-decoration: none;
+  color: yellowgreen;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tarjeta{
+    display: flex;
+        flex-direction: column;
+    width: 21%;
+    border: 1px solid rgb(38, 0, 255);
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 20px auto 40px;
+    box-shadow: rgb(78, 78, 78) 2px 2px 5px ;
+}
+
+.contador{
+    display: flex;
+        justify-content: space-between;
+    width: 80%;
+    border: 1px solid rgb(38, 0, 255);
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin: 0 auto 10px;
+    box-shadow: rgb(78, 78, 78) 2px 2px 3px ;
+}
+
+.boton{
+    font-size: 32px;
+    background-color: #fafafa;
+    border: 0;
+    padding: 0 15px;
+    margin: 0 5%px;
+}
+
+.agregar{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(38, 0, 255);
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px auto;
+    width: 85%;
+    box-shadow: rgb(78, 78, 78) 2px 2px 3px ;
+}
+
+.img{
+    width: auto;
+    height: 100%;
+    margin: auto;
+}
+
+.imgConteiner{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    height: 60%;
+}
+
+.presentacion{
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    color: black;
+    width: 60%;
+    height: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.frase{
+    color: black;
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+        flex-wrap: wrap
+}
+
+.detail{
+    display: flex;
+    margin: 0 15%;
+}
+
+.imgDetail{
+    width: 486px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.divDetail{
+    padding: 5%;
+}
