@@ -17,7 +17,7 @@ const Efecto = (props) => {
     };
 
     return(
-        <div className='contador'>
+        <div className='flex borderRad-5 contador'>
             <button className='boton' onClick={resta}>-</button>
             <p>{number}</p>
             <button className='boton' onClick={add}>+</button>

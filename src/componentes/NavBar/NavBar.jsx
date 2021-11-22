@@ -1,6 +1,5 @@
 import logo from './Amway.svg'
 import carrito from './carrito.svg'
-//import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import { Link } from 'react-router-dom'
 
@@ -15,10 +14,10 @@ const Header = (props) => {
 
     return (
         <>
-        <header className='headerContainer'>
+        <header className='flex white headerContainer'>
             <Link className='flex' to="/"><img className='tamanioLogo' src={logo} alt="logo" /></Link>
             <nav>
-                <ul>
+                <ul className='flex'>
                     {categorias?.map((cat) => {
                         return (
                             <li className='flex' key={cat.id}><Link to={cat.direccion}>{cat.texto}</Link></li>
@@ -28,7 +27,7 @@ const Header = (props) => {
                 </ul>
             </nav>
         </header>
-            <h2 className='frase'>{props.greeting}</h2>
+            <h2 className='frase black'>{props.greeting}</h2>
         </>
     )
 }

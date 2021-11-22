@@ -31,7 +31,7 @@ const ItemDetailContainer = () => {
         })
     }, [])
 
-    return (loading ? <h1>CASI LISTO...</h1> :
+    return (loading ? <div className='flex divCargando'><h1>CASI LISTO...</h1><img className='cargando' src="https://th.bing.com/th/id/R.7500668d515374c0dd15a7ed1e8bdbd8?rik=KPncNUUV2lQfng&pid=ImgRaw&r=0" alt="cargando" /></div> :
         <>
         <div className='flex'>
             <ItemDetail items={items} />

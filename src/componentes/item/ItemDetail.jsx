@@ -3,15 +3,13 @@ import './Items.css';
 
 const ItemDetail = ( {items} ) => {
 
-    console.log(items);
-
     return (
-            <div className='detail'>
-                <div className='divDetail'>
+            <div className='flex detail'>
+                <div className='pad-5'>
                     <img className='imgDetail' src={items.img} alt={items.titulo} />
                 </div>
-                <div>
-                    <h2>{items.titulo}</h2>
+                <div className='pad-5'>
+                    <h2 className>{items.titulo}</h2>
                     <p>{items.precio}</p>
                     <h4>{items.tituloDescripcion}</h4>
                     <p>{items.descripcion}</p>

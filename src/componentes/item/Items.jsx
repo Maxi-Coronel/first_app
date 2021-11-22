@@ -10,8 +10,18 @@ export const productos = [
         descripcion: 'Apto para cualquier artículo y superficie lavable. El L.O.C.™ Limpiador Concentrado Multiusos con ingredientes derivados de fuentes naturales sin blanqueador, es de alto desempeño y versátil, por eso es la elección correcta, siempre.'
     },
     {
-        titulo: 'SA8 detergente para ropa',
+        titulo: 'Lavaplatos líquido',
         id: '2',
+        precio: '$2020',
+        stock: '10',
+        img: 'https://www.planeadordecompras.com/files/productos/imagen/118.jpg?s=146393',
+        categoria: 'hogar',
+        tituloDescripcion: 'Una sola gota corta la grasa',
+        descripcion: 'La fórmula de Dish Drops™ Lavaplatos Líquido Concentrado elimina la grasa y los residuos o manchas de alimentos dejando tu vajilla y utensilios de cocina limpios y relucientes. '
+    },
+    {
+        titulo: 'SA8 detergente para ropa',
+        id: '3',
         precio: '$2350',
         stock: '5',
         img: 'https://www.planeadordecompras.com/files/productos/imagen/113.jpg?s=238738',
@@ -21,7 +31,7 @@ export const productos = [
     },
     {
         titulo: 'Pasta dentífrica',
-        id: '3',
+        id: '4',
         precio: '$760',
         stock: '10',
         img: 'https://www.amway.com/medias/E9530-en-US-690px-01.jpg?context=bWFzdGVyfGltYWdlc3w5NDcxNHxpbWFnZS9qcGVnfGltYWdlcy9oY2IvaGJmLzkxMjM3MjM0NDQyNTQuanBnfGZhZWFiYjcxYmMwMWE0ZDkwNjMzYjM1MGZhY2QxZmQxODk2OGQ3NTJhYTU5MzZkZjMxMzY2ODM2ZmU0YzA5YmQ',
@@ -30,8 +40,18 @@ export const productos = [
         descripcion: 'La Pasta Dentífrica con Fluoruro Glister™ tiene ingredientes, como el fluoruro, que ayudan a fortalecer el esmalte de los dientes, y el silicato de sodio, que los pule de manera suave.'
     },
     {
+        titulo: 'Aerosol Refrescante',
+        id: '5',
+        precio: '$640',
+        stock: '10',
+        img:'https://www.amway.com/medias/120351-en-US-690px-01?context=bWFzdGVyfGltYWdlc3w0NDgwN3xpbWFnZS9qcGVnfGltYWdlcy9oMzYvaGRiLzg5ODkyNzMyMjcyOTQuanBnfGMzNDkxMTE4N2I2MjRiNjk5MDgzODZhN2M5MzljOWQxOTc2M2QxZGZjODEzZmFlOGRjNGFjYjhmYThiMTA2MGY',
+        categoria: 'cuidadoPersonal',
+        tituloDescripcion: 'ALIENTO LIMPIO Y FRESCO SOBRE LA MARCHA',
+        descripcion: 'Disfruta de una sensación de menta fresca con un spray rápido. Fórmula sin aerosol no contiene azúcar ni calorías.'
+    },
+    {
         titulo: 'Enjuague bucal',
-        id: '4',
+        id: '6',
         precio: '$1458',
         stock: '3',
         img: 'http://d26lpennugtm8s.cloudfront.net/stores/086/270/products/733163-mlm25755323314_072017-o-85c162208bf00dcd9d15036946188854-640-0.jpg',
@@ -40,18 +60,8 @@ export const productos = [
         descripcion: 'El Enjuague Bucal Concentrado Fórmula Anti Placa Glister™ ayuda a eliminar bacterias que causan el mal aliento, a la vez que remueve la placa que el cepillado por sí solo no logra, manteniendo el aliento fresco y con un delicioso sabor a menta.'
     },
     {
-        titulo: 'Lavaplatos líquido',
-        id: '5',
-        precio: '$2020',
-        stock: '10',
-        img: 'https://www.planeadordecompras.com/files/productos/imagen/118.jpg?s=146393',
-        categoria: 'hogar',
-        tituloDescripcion: 'Una sola gota corta la grasa',
-        descripcion: 'La fórmula de Dish Drops™ Lavaplatos Líquido Concentrado elimina la grasa y los residuos o manchas de alimentos dejando tu vajilla y utensilios de cocina limpios y relucientes. '
-    },
-    {
         titulo: 'Bebida energizante XS',
-        id: '6',
+        id: '7',
         precio: '$215',
         stock: '12',
         img: 'https://www.amway.com/medias/124618-en-US-690px-01?context=bWFzdGVyfGltYWdlc3w2Mzc5NHxpbWFnZS9qcGVnfGltYWdlcy9oY2EvaDE4Lzg5NjQzNDk4MjA5NTguanBnfDlkZDRiZDQ3NjQ4ZWU2NjRhOTgwYjg4NWVkMThlZjNlZGM5ZmFjMjY5ODA3ZTU1ZTA1YjM5M2U0ZWM2N2NkNzM',
@@ -61,7 +71,7 @@ export const productos = [
     },
     {
         titulo: 'Intensive Skincare',
-        id: '7',
+        id: '8',
         precio: '$4960',
         stock: '7',
         img: 'https://www.amway.com/medias/120524V-en-US-690px-01?context=bWFzdGVyfGltYWdlc3w1MTM5OHxpbWFnZS9qcGVnfGltYWdlcy9oZTgvaDNjLzg4MzgyMjUzOTU3NDIuanBnfDkwMjdkNTFkNDg2ZmUwNDBlNjkzMjdlNjJmYmQzYzhlMjE2NWJhOTMzYmZmNzM3MjQ3MDIyZDgwZTA1MmVkMTk',
