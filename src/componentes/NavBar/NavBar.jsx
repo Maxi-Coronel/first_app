@@ -1,6 +1,6 @@
 import logo from './Amway.svg'
 import carrito from './carrito.svg'
-import CartWidget from '../CartWidgete/CartWidgete'
+import CartWidget from '../CartWidget/CartWidget'
 import { Link } from 'react-router-dom'
 
 const Header = (props) => {
