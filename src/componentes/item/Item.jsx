@@ -1,8 +1,7 @@
 import React from "react";
 import './Items.css'
-import Efecto from "../Efecto";
 import { Link } from 'react-router-dom'
-import Button from '../Button'
+import ItemCount from "../ItemCount";
 
 
 const Item = ({item}) => {
@@ -15,8 +14,7 @@ const Item = ({item}) => {
                 </Link>
                 <h5>{item.titulo}</h5>
                 <p>{item.precio}</p>
-                <Efecto stock={item.stock}/>
-                <Button id={item.id} texto='Agregar al carrito'/>
+                <ItemCount stock={item.stock}/>
             </div>
         </div>
     )

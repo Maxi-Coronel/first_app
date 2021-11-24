@@ -1,7 +1,6 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import {productos} from './Items'
 import ItemDetail from './ItemDetail'
-import { useEffect } from 'react/cjs/react.development'
 import { useParams } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
