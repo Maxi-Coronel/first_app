@@ -20,6 +20,11 @@ body{
 .pad-5{
     padding: 5%;
 }
+
+.pad-5 p{
+    margin: 15px 0;
+}
+
 .black{
     color: black;
 }
@@ -90,7 +95,8 @@ li a{
     border: 1px solid rgb(38, 0, 255);
     background-color: #fafafa;
     margin: 0 auto 10px;
-    box-shadow: rgb(78, 78, 78) 2px 2px 3px ;
+    box-shadow: rgb(78, 78, 78) 2px 2px 3px;
+    max-width: 200px;
 }
 
 .boton{
@@ -102,12 +108,15 @@ li a{
 }
 
 .agregar{
+    justify-content: space-between;
+    align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 1px solid rgb(38, 0, 255);
     font-size: 18px;
     margin: 10px auto;
     width: 85%;
-    box-shadow: rgb(78, 78, 78) 2px 2px 3px ;
+    box-shadow: rgb(78, 78, 78) 2px 2px 3px;
+    max-width: 200px;
 }
 
 .img{
@@ -138,7 +147,7 @@ li a{
 }
 
 .detail{
-    margin: 0 15%;
+    margin: 0;
 }
 
 .imgDetail{

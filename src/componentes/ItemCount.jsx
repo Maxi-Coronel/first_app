@@ -24,7 +24,9 @@ const ItemCount = (props) => {
                 <p>{number}</p>
                 <button className='boton' onClick={add}>+</button>
             </div>
-            <Button id={props.id} texto='Agregar al carrito' num={number}/>
+            <div className='flex'>
+                <Button id={props.id} texto='Agregar al carrito' setN={setNumber} num={number} stock={props.stock} set={props.set} new={props.new}/>
+            </div>
         </div>
     )
 }

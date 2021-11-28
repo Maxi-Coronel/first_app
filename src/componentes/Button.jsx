@@ -1,15 +1,13 @@
 import React from "react";
-import { useState } from "react";
 
 const Button = (props) => {
 
-    const [agrega, setAgrega] = useState()
-
     const clik = () => {
-        setAgrega(props.num)
-        console.log(`se agrego al carrito ${agrega}`)
+        if (props.num <= props.stock && props.num > 0) {
+            console.log(`se agrego al carrito ${props.num}`);
+            props.setN(0);
+        }
     }
-
 
     return(
         <>
