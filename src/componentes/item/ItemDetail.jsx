@@ -1,8 +1,9 @@
 import React from "react";
 import './Items.css';
 import ItemCount from "../ItemCount";
+import { Link } from "react-router-dom";
 
-const ItemDetail = ( {items, onAdd} ) => {
+const ItemDetail = ( {items, onAdd, irCart} ) => {
 
     return (
         <div className='flex detail'>
@@ -15,7 +16,10 @@ const ItemDetail = ( {items, onAdd} ) => {
                 <h4>{items.tituloDescripcion}</h4>
                 <p>{items.descripcion}</p>
                 <p>Cantidad disponible: {items.stock}</p>
-                <ItemCount stock={items.stock} id={items.id} onAdd={onAdd}/>
+                {irCart ? <Link to="/cart">Terminar compra</Link>
+                        : <ItemCount stock={items.stock} id={items.id} onAdd={onAdd}/>}
+                
+                
             </div>
         </div>
     )

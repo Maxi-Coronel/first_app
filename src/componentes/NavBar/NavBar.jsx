@@ -23,6 +23,7 @@ const Header = (props) => {
                             <li className='flex' key={cat.id}><Link to={cat.direccion}>{cat.texto}</Link></li>
                         )
                     })}
+                    <li className='flex' key='f'><Link to='/cart'>CART</Link></li>
                     <CartWidget cart={carrito}/>
                 </ul>
             </nav>
