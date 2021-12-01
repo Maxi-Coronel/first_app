@@ -15,6 +15,14 @@ const ItemDetailContainer = () => {
             resolve(productos)
         }, 2000);
     });
+
+
+    const onAdd = (cantidad) => {
+            console.log({...items, cantidad: cantidad});
+            //props.setN(0);
+    }
+
+
     
     useEffect(() => {
         setLoading(true)
@@ -33,7 +41,7 @@ const ItemDetailContainer = () => {
     return (loading ? <div className='flex divCargando'><h1>CASI LISTO...</h1><img className='cargando' src="https://th.bing.com/th/id/R.7500668d515374c0dd15a7ed1e8bdbd8?rik=KPncNUUV2lQfng&pid=ImgRaw&r=0" alt="cargando" /></div> :
         <>
         <div className='flex'>
-            <ItemDetail items={items} />
+            <ItemDetail items={items} onAdd={onAdd}/>
         </div>
         </>
     )

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import ItemCount from "../ItemCount";
 
 
-const Item = ({item}) => {
+const Item = ({item, onAdd}) => {
     const [nuevoStock, setNuevoStock] = useState(item.stock)
 
     return (
@@ -15,7 +15,7 @@ const Item = ({item}) => {
                 </Link>
                 <h5>{item.titulo}</h5>
                 <p>{item.precio}</p>
-                <ItemCount stock={item.stock} id={item.id} set={setNuevoStock} new={nuevoStock}/>
+                <ItemCount stock={item.stock} id={item.id} set={setNuevoStock} new={nuevoStock} onAdd={onAdd}/>
             </div>
         </div>
     )

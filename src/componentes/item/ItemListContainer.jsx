@@ -10,6 +10,11 @@ const ItemListContainer = () => {
 
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(false);
+
+
+    const onAdd = (cantidad) => {
+        console.log({...items, cantidad: cantidad});
+    }
     
     useEffect(() => {
         setLoading(true);
@@ -36,7 +41,7 @@ const ItemListContainer = () => {
         ? <div className='flex divCargando'><h1>CASI LISTO...</h1><img className='cargando' src="https://th.bing.com/th/id/R.7500668d515374c0dd15a7ed1e8bdbd8?rik=KPncNUUV2lQfng&pid=ImgRaw&r=0" alt="cargando" /></div>
         : <>
             <div className='flex-wrap'>
-                <ItemList items={items} />
+                <ItemList items={items} onAdd={onAdd} />
             </div>
           </>
     )

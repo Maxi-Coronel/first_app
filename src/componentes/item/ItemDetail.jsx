@@ -2,7 +2,7 @@ import React from "react";
 import './Items.css';
 import ItemCount from "../ItemCount";
 
-const ItemDetail = ( {items} ) => {
+const ItemDetail = ( {items, onAdd} ) => {
 
     return (
         <div className='flex detail'>
@@ -15,7 +15,7 @@ const ItemDetail = ( {items} ) => {
                 <h4>{items.tituloDescripcion}</h4>
                 <p>{items.descripcion}</p>
                 <p>Cantidad disponible: {items.stock}</p>
-                <ItemCount stock={items.stock} id={items.id}/>
+                <ItemCount stock={items.stock} id={items.id} onAdd={onAdd}/>
             </div>
         </div>
     )

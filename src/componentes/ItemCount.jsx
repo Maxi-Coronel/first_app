@@ -11,7 +11,7 @@ const ItemCount = (props) => {
         }
     };
     
-    const resta = () => {
+    const substract = () => {
         if (number > 0) {
             setNumber(number -1)
         }
@@ -20,12 +20,12 @@ const ItemCount = (props) => {
     return(
         <div>
             <div className='flex borderRad-5 contador'>
-                <button className='boton' onClick={resta}>-</button>
+                <button className='boton' onClick={substract}>-</button>
                 <p>{number}</p>
                 <button className='boton' onClick={add}>+</button>
             </div>
             <div className='flex'>
-                <Button id={props.id} texto='Agregar al carrito' setN={setNumber} num={number} stock={props.stock} set={props.set} new={props.new}/>
+                <Button id={props.id} texto='Agregar al carrito' setN={setNumber} num={number} onAdd={props.onAdd} stock={props.stock} set={props.set} new={props.new}/>
             </div>
         </div>
     )
