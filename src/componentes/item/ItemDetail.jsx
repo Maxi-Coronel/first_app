@@ -16,8 +16,8 @@ const ItemDetail = ( {items, onAdd, irCart} ) => {
                 <h4>{items.tituloDescripcion}</h4>
                 <p>{items.descripcion}</p>
                 <p>Cantidad disponible: {items.stock}</p>
-                {irCart ? <Link to="/cart">Terminar compra</Link>
-                        : <ItemCount stock={items.stock} id={items.id} onAdd={onAdd}/>}
+                {irCart ? (<Link to="/cart">Terminar compra</Link>)
+                        : (<ItemCount stock={items.stock} id={items.id} onAdd={onAdd}/>)}
                 
                 
             </div>

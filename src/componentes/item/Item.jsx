@@ -15,7 +15,7 @@ const Item = ({item, onAdd}) => {
                 </Link>
                 <h5>{item.titulo}</h5>
                 <p>{item.precio}</p>
-                <ItemCount stock={item.stock} id={item.id} set={setNuevoStock} new={nuevoStock} onAdd={onAdd}/>
+                {/* <ItemCount stock={item.stock} id={item.id} set={setNuevoStock} new={nuevoStock} onAdd={onAdd}/> */}
             </div>
         </div>
     )
