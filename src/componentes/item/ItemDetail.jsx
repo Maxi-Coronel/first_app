@@ -16,10 +16,8 @@ const ItemDetail = ( {items, onAdd, irCart} ) => {
                 <h4>{items.tituloDescripcion}</h4>
                 <p>{items.descripcion}</p>
                 <p>Cantidad disponible: {items.stock}</p>
-                {irCart ? (<Link to="/cart">Terminar compra</Link>)
+                {irCart ? (<Link to="/cart"><button className='borderRad-5 agregar'>Terminar compra</button></Link>)
                         : (<ItemCount stock={items.stock} id={items.id} onAdd={onAdd}/>)}
-                
-                
             </div>
         </div>
     )

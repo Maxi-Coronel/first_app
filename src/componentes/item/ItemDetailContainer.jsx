@@ -17,14 +17,11 @@ const ItemDetailContainer = () => {
         }, 2000);
     });
 
-
     const onAdd = (cantidad) => {
             console.log({...items, cantidad: cantidad});
             setIrCart(true)
             //props.setN(0);
     }
-
-
     
     useEffect(() => {
         setLoading(true)
